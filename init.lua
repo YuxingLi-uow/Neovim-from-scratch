@@ -19,3 +19,6 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+
+-- let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+-- set termguicolors
