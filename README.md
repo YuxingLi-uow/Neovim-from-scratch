@@ -1,2 +1,4 @@
-# Neovim from scratch
+# Vimrc Config
+
 It's a ```.vimrc``` config file.
+
