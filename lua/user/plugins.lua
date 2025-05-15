@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use({'projekt0n/github-nvim-theme', config = function() require('github-theme').setup({ }) end,})	
   
   -- Cmp 
-  use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
+  use { "hrsh7th/nvim-cmp" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" } -- buffer completions
   use { "hrsh7th/cmp-path", commit = "447c87cdd6e6d6a1d2488b1d43108bfa217f56e1" } -- path completions
 	use { "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" } -- snippet completions
@@ -78,16 +78,14 @@ return packer.startup(function(use)
 	use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
   use { "williamboman/mason.nvim" } -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim" }
-	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
+	use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" }
 
 	-- Telescope
-	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
+	use { "nvim-telescope/telescope.nvim" }
 
 	-- Treesitter
-	use {
-		"nvim-treesitter/nvim-treesitter"
-  }
+	use { "nvim-treesitter/nvim-treesitter" }
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
